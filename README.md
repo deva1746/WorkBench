@@ -66,17 +66,8 @@ cd C:\Users\javva\Projects\productivity-os
 
 ### 2. Start PostgreSQL
 
-**Option A — Docker (recommended):**
+- open pgadmin in local
 
-```bash
-docker compose up -d
-```
-
-**Option B — Local PostgreSQL:**
-
-```bash
-psql -U postgres -f database/schema.sql
-```
 
 ### 3. Backend setup
 
@@ -96,7 +87,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 
 # Copy environment file and edit if needed
-copy .env.example .env
+copy .env
 
 # Start the API server
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
@@ -118,7 +109,7 @@ cd frontend
 npm install
 
 # Copy environment file
-copy .env.example .env
+copy .env
 
 # Start dev server
 npm run dev
