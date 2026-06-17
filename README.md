@@ -45,10 +45,7 @@ productivity-os/
 │   └── vite.config.js
 ├── database/
 │   └── schema.sql                 # PostgreSQL DDL
-├── docs/
-│   └── API.md                     # Full API documentation
-└── docker-compose.yml             # PostgreSQL container
-```
+
 
 ## Prerequisites
 
